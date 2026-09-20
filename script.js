@@ -1,5 +1,5 @@
 /**
- * DISASTERSPLAT: VIDEO-BASED 3D MAPPING FOR EMERGENCY RESPONSE
+ * DRUSHY: VIDEO-BASED 3D MAPPING FOR EMERGENCY RESPONSE
  * Core Interactive Client Engine (Software-Only Architecture)
  * 
  * Features:
@@ -1312,7 +1312,7 @@ function initTheme() {
   const themeToggle = document.getElementById('themeToggle');
   const themeIcon = document.getElementById('themeIcon');
   
-  const savedTheme = localStorage.getItem('disastersplat_theme') || 'dark';
+  const savedTheme = localStorage.getItem('DRUSHY_theme') || 'dark';
   applyTheme(savedTheme);
 
   if (themeToggle) {
@@ -1320,7 +1320,7 @@ function initTheme() {
       const currentTheme = document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
       const newTheme = currentTheme === 'light' ? 'dark' : 'light';
       applyTheme(newTheme);
-      localStorage.setItem('disastersplat_theme', newTheme);
+      localStorage.setItem('DRUSHY_theme', newTheme);
       showToast(newTheme === 'light' ? 'Switched to Light Theme' : 'Switched to Tactical Dark Theme', newTheme === 'light' ? '☀️' : '🌙');
     });
   }
@@ -1460,7 +1460,7 @@ const RESEARCH_PAPERS = [
     authors: 'Yin, W., Zhang, C., Chen, H., Cai, Z., & Shen, C.',
     venue: 'IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI 2024)',
     category: 'Metric Depth Priors',
-    relevance: 'Zero-shot absolute metric scale retrieval invariant to unknown camera focal lengths, granting DisasterSplat real-world meter coordinates.',
+    relevance: 'Zero-shot absolute metric scale retrieval invariant to unknown camera focal lengths, granting DRUSHY real-world meter coordinates.',
     link: 'https://arxiv.org/abs/2404.15506',
     citation: 'Yin, W., et al. (2024). Metric3D v2: Versatile Camera-Decoupled Metric Depth. IEEE TPAMI.'
   },
@@ -1520,7 +1520,7 @@ const RESEARCH_PAPERS = [
     authors: 'Zhang, L., Wu, T., & Dai, B.',
     venue: 'ACM Multimedia 2024 (Open Source Track)',
     category: '3D Gaussian Splatting',
-    relevance: 'Modular Python pipeline architecture supporting plug-and-play SfM, depth regularizers, and WebGL viewers used as the architectural base for DisasterSplat.',
+    relevance: 'Modular Python pipeline architecture supporting plug-and-play SfM, depth regularizers, and WebGL viewers used as the architectural base for DRUSHY.',
     link: 'https://github.com/GAP-LAB-UNC-SJTU/GauStudio',
     citation: 'Zhang, L., et al. (2024). GauStudio: A Modular 3D Gaussian Splatting Framework. ACM MM 2024.'
   },
@@ -1540,7 +1540,7 @@ const RESEARCH_PAPERS = [
     authors: 'Schönberger, J. L., & Frahm, J.-M.',
     venue: 'IEEE / CVPR 2016',
     category: 'Disaster Robotics & GIS',
-    relevance: 'Industry standard geometric baseline for camera pose estimation used as DisasterSplat\'s robust offline fallback when monocular optical flow drifts.',
+    relevance: 'Industry standard geometric baseline for camera pose estimation used as DRUSHY\'s robust offline fallback when monocular optical flow drifts.',
     link: 'https://demuc.de/colmap/',
     citation: 'Schönberger, J. L., & Frahm, J.-M. (2016). Structure-from-Motion Revisited. CVPR 2016.'
   },
@@ -1617,7 +1617,7 @@ function initReferencesLibrary() {
         <div class="ref-authors">${escapeHtml(paper.authors)}</div>
         <div class="ref-venue">${escapeHtml(paper.venue)}</div>
         <div class="ref-relevance">
-          <strong>DisasterSplat Integration:</strong> ${escapeHtml(paper.relevance)}
+          <strong>DRUSHY Integration:</strong> ${escapeHtml(paper.relevance)}
         </div>
         <div class="ref-actions">
           <a href="${paper.link}" target="_blank" rel="noopener noreferrer" class="ref-link-btn">
