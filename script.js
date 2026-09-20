@@ -424,7 +424,7 @@ function initAnimatedArchitecture() {
             </div>
             <div class="sim-hud-center">
               <div style="position: relative; width: 190px; height: 85px; border-radius: 4px; overflow: hidden; border: 1px solid var(--border-accent);">
-                <img src="assets/drone_3dgs_hero.jpg" style="width: 100%; height: 100%; object-fit: cover;" alt="Textured reconstruction">
+                <img src="https://github.com/RasikDhage0825/Team-DRUSHY/blob/main/drone_3dgs_hero.jpg?raw=true" style="width: 100%; height: 100%; object-fit: cover;" alt="Textured reconstruction">
                 <div style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(6,182,212,0.25), transparent);"></div>
                 <div style="position: absolute; bottom: 4px; left: 6px; font-family: var(--font-mono); font-size: 0.6rem; color: #fff; background: rgba(0,0,0,0.85); padding: 1px 5px; border-radius: 2px;">
                   BAKED UV COLOR MAP
